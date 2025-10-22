@@ -83,6 +83,12 @@ button[data-testid="stBaseButton-secondaryFormSubmit"]:active {
     overflow: hidden;
 }
 
+[data-theme="dark"] .info-box {
+    background: linear-gradient(135deg, #2d2d2d, #252525);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-right: 5px solid #42a5f5;
+}
+
 .info-box:before {
     content: "♻️";
     position: absolute;
@@ -102,6 +108,10 @@ button[data-testid="stBaseButton-secondaryFormSubmit"]:active {
     display: inline-block;
 }
 
+[data-theme="dark"] .info-box h3 {
+    color: #42a5f5;
+}
+
 .info-box h3:after {
     content: "";
     position: absolute;
@@ -113,11 +123,19 @@ button[data-testid="stBaseButton-secondaryFormSubmit"]:active {
     border-radius: 2px;
 }
 
+[data-theme="dark"] .info-box h3:after {
+    background-color: #42a5f5;
+}
+
 .info-box p {
     color: #444;
     line-height: 1.6;
     font-size: 1.05rem;
     margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .info-box p {
+    color: #b0b0b0;
 }
 
 /* Card de beneficios */
@@ -131,6 +149,12 @@ button[data-testid="stBaseButton-secondaryFormSubmit"]:active {
     position: relative;
 }
 
+[data-theme="dark"] .login-benefits-card {
+    background: linear-gradient(135deg, #2d2d2d, #1e2d1e);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-right: 5px solid #66bb6a;
+}
+
 .login-benefits-card h4 {
     color: #27ae60;
     margin-bottom: 1.2rem;
@@ -138,6 +162,10 @@ button[data-testid="stBaseButton-secondaryFormSubmit"]:active {
     font-weight: 600;
     position: relative;
     display: inline-block;
+}
+
+[data-theme="dark"] .login-benefits-card h4 {
+    color: #66bb6a;
 }
 
 .login-benefits-card h4:after {
@@ -149,6 +177,10 @@ button[data-testid="stBaseButton-secondaryFormSubmit"]:active {
     bottom: -8px;
     left: 0;
     border-radius: 2px;
+}
+
+[data-theme="dark"] .login-benefits-card h4:after {
+    background-color: #66bb6a;
 }
 
 .login-benefits-card ul {
@@ -164,11 +196,19 @@ button[data-testid="stBaseButton-secondaryFormSubmit"]:active {
     line-height: 1.5;
 }
 
+[data-theme="dark"] .login-benefits-card li {
+    color: #b0b0b0;
+}
+
 .login-benefits-card li:before {
     content: "✓";
     color: #2ecc71;
     font-weight: bold;
     margin-right: 0.5rem;
+}
+
+[data-theme="dark"] .login-benefits-card li:before {
+    color: #66bb6a;
 }
 
 /* Textos informativos */
@@ -180,11 +220,19 @@ button[data-testid="stBaseButton-secondaryFormSubmit"]:active {
     font-size: 0.9rem;
 }
 
+[data-theme="dark"] .login-info-text {
+    color: #b0b0b0;
+}
+
 .login-contact-text {
     text-align: center;
     margin-top: 0.2rem;
     color: #777;
     font-size: 0.8rem;
+}
+
+[data-theme="dark"] .login-contact-text {
+    color: #999;
 }
 
 /* Rodape */
@@ -197,6 +245,12 @@ button[data-testid="stBaseButton-secondaryFormSubmit"]:active {
     border-top: 1px solid #eee;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+}
+
+[data-theme="dark"] .login-footer {
+    color: #999;
+    border-top: 1px solid #444;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Removendo estilos genéricos de botões para evitar conflitos */

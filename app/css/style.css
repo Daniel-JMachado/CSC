@@ -14,6 +14,20 @@
     --info-color: #2196f3;
 }
 
+/* Modo escuro */
+[data-theme="dark"] {
+    --primary-color: #4caf50;
+    --secondary-color: #66bb6a;
+    --accent-color: #81c784;
+    --text-color: #e0e0e0;
+    --background-color: #1e1e1e;
+    --card-color: #2d2d2d;
+    --success-color: #66bb6a;
+    --warning-color: #ffa726;
+    --error-color: #ef5350;
+    --info-color: #42a5f5;
+}
+
 /* Estilização geral */
 .main-header {
     color: var(--primary-color);
@@ -37,6 +51,11 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+[data-theme="dark"] .card {
+    background-color: var(--card-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
 .card-title {
     color: var(--primary-color);
     font-size: 1.5rem;
@@ -51,6 +70,11 @@
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 15px;
+}
+
+[data-theme="dark"] .info-box {
+    background-color: rgba(76, 175, 80, 0.15);
+    border-left: 5px solid var(--primary-color);
 }
 
 /* Botões */
@@ -106,12 +130,25 @@
     padding: 12px 15px;
 }
 
+[data-theme="dark"] .styled-table th,
+[data-theme="dark"] .styled-table td {
+    color: var(--text-color);
+}
+
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
 }
 
+[data-theme="dark"] .styled-table tbody tr {
+    border-bottom: 1px solid #444444;
+}
+
 .styled-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
+}
+
+[data-theme="dark"] .styled-table tbody tr:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .styled-table tbody tr:last-of-type {
@@ -157,6 +194,11 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+[data-theme="dark"] .login-container {
+    background-color: var(--card-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
 .login-header {
     text-align: center;
     color: var(--primary-color);
@@ -168,6 +210,12 @@
     border-radius: 5px;
     border: 1px solid #ddd;
     padding: 10px;
+}
+
+[data-theme="dark"] .login-form input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #555;
+    color: var(--text-color);
 }
 
 /* Animações */

@@ -10,6 +10,11 @@
     border-bottom: 3px solid #e9e9e9;
 }
 
+[data-theme="dark"] .morador-header {
+    color: #66bb6a;
+    border-bottom: 3px solid #444444;
+}
+
 .morador-section-title {
     color: #2e8b57;
     margin: 1.5rem 0 1rem 0;
@@ -17,6 +22,11 @@
     font-weight: 600;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #f0f0f0;
+}
+
+[data-theme="dark"] .morador-section-title {
+    color: #66bb6a;
+    border-bottom: 2px solid #444444;
 }
 
 /* Card de boas-vindas */
@@ -30,10 +40,20 @@
     border-left: 5px solid #2e8b57;
 }
 
+[data-theme="dark"] .morador-welcome-card {
+    background: linear-gradient(135deg, #2d2d2d 0%, #252525 100%);
+    border-left: 5px solid #66bb6a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 .morador-welcome-card .morador-header {
     margin-top: 0;
     margin-bottom: 1rem;
     border-bottom: 2px solid #2e8b57;
+}
+
+[data-theme="dark"] .morador-welcome-card .morador-header {
+    border-bottom: 2px solid #66bb6a;
 }
 
 .morador-welcome-card h2 {
@@ -42,10 +62,18 @@
     font-size: 1.8rem;
 }
 
+[data-theme="dark"] .morador-welcome-card h2 {
+    color: #66bb6a;
+}
+
 .morador-welcome-card p {
     color: #666;
     line-height: 1.6;
     margin-bottom: 0;
+}
+
+[data-theme="dark"] .morador-welcome-card p {
+    color: #b0b0b0;
 }
 
 /* Cards de estatísticas */
@@ -63,9 +91,18 @@
     justify-content: center;
 }
 
+[data-theme="dark"] .morador-stat-card {
+    background-color: #2d2d2d;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
 .morador-stat-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .morador-stat-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .morador-stat-card h3 {
@@ -80,6 +117,10 @@
     font-size: 1rem;
     margin: 0;
     font-weight: 500;
+}
+
+[data-theme="dark"] .morador-stat-card p {
+    color: #b0b0b0;
 }
 
 .morador-stat-total {
@@ -117,10 +158,20 @@
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+[data-theme="dark"] .morador-notification-card {
+    background-color: #2d2d2d;
+    border-left: 4px solid #66bb6a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 /* Efeito hover para notificações */
 .morador-notification-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .morador-notification-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Estilo específico para notificações lidas */
@@ -130,13 +181,27 @@
     opacity: 0.85;
 }
 
+[data-theme="dark"] .morador-notification-card.notification-read {
+    border-left: 4px solid #4a7c59;
+    background-color: rgba(255, 255, 255, 0.05);
+    opacity: 0.75;
+}
+
 .morador-notification-card h4 {
     margin-bottom: 0.5rem;
     color: #333;
 }
 
+[data-theme="dark"] .morador-notification-card h4 {
+    color: #e0e0e0;
+}
+
 .morador-notification-card p {
     margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .morador-notification-card p {
+    color: #b0b0b0;
 }
 
 .morador-notification-card small {
@@ -144,6 +209,10 @@
     font-style: italic;
     display: block;
     text-align: right;
+}
+
+[data-theme="dark"] .morador-notification-card small {
+    color: #999;
 }
 
 /* Estilo para a contagem de notificações não lidas */
@@ -167,9 +236,23 @@
     border-left: 4px solid #27ae60;
 }
 
+[data-theme="dark"] .morador-tip-card {
+    background-color: rgba(39, 174, 96, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #4caf50;
+}
+
 .morador-tip-card h4 {
     color: #27ae60;
     margin-bottom: 0.8rem;
+}
+
+[data-theme="dark"] .morador-tip-card h4 {
+    color: #66bb6a;
+}
+
+[data-theme="dark"] .morador-tip-card p {
+    color: #b0b0b0;
 }
 
 /* Formulário de solicitação de coleta */
@@ -179,6 +262,11 @@
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .morador-solicitacao-form {
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Cards de catadores para seleção */

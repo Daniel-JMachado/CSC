@@ -10,6 +10,11 @@
     margin-bottom: 2rem;
 }
 
+[data-theme="dark"] .perfil-container {
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 .perfil-header {
     display: flex;
     align-items: center;
@@ -23,6 +28,10 @@
     overflow: hidden;
     margin-right: 2rem;
     border: 3px solid #2e8b57;
+}
+
+[data-theme="dark"] .perfil-foto {
+    border: 3px solid #66bb6a;
 }
 
 .perfil-foto img {
@@ -42,6 +51,10 @@
     margin-bottom: 0.5rem;
 }
 
+[data-theme="dark"] .perfil-nome {
+    color: #66bb6a;
+}
+
 .perfil-tipo {
     display: inline-block;
     background-color: #e8f5e9;
@@ -51,6 +64,11 @@
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .perfil-tipo {
+    background-color: rgba(102, 187, 106, 0.2);
+    color: #66bb6a;
 }
 
 .perfil-detalhe {
@@ -65,8 +83,16 @@
     flex-shrink: 0;
 }
 
+[data-theme="dark"] .perfil-detalhe-label {
+    color: #b0b0b0;
+}
+
 .perfil-detalhe-valor {
     color: #333;
+}
+
+[data-theme="dark"] .perfil-detalhe-valor {
+    color: #e0e0e0;
 }
 
 .perfil-card {
@@ -77,11 +103,20 @@
     border-left: 4px solid #2e8b57;
 }
 
+[data-theme="dark"] .perfil-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #66bb6a;
+}
+
 .perfil-card h3 {
     color: #2e8b57;
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .perfil-card h3 {
+    color: #66bb6a;
 }
 
 /* Estilos do formulário de edição de perfil */
@@ -96,6 +131,10 @@
     color: #444;
 }
 
+[data-theme="dark"] .perfil-form label {
+    color: #b0b0b0;
+}
+
 .perfil-form input, 
 .perfil-form textarea, 
 .perfil-form select {
@@ -106,12 +145,27 @@
     font-size: 1rem;
 }
 
+[data-theme="dark"] .perfil-form input,
+[data-theme="dark"] .perfil-form textarea,
+[data-theme="dark"] .perfil-form select {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #555;
+    color: #e0e0e0;
+}
+
 .perfil-form input:focus, 
 .perfil-form textarea:focus, 
 .perfil-form select:focus {
     border-color: #2e8b57;
     outline: none;
     box-shadow: 0 0 0 2px rgba(46, 139, 87, 0.2);
+}
+
+[data-theme="dark"] .perfil-form input:focus,
+[data-theme="dark"] .perfil-form textarea:focus,
+[data-theme="dark"] .perfil-form select:focus {
+    border-color: #66bb6a;
+    box-shadow: 0 0 0 2px rgba(102, 187, 106, 0.2);
 }
 
 .perfil-form button {
@@ -128,6 +182,14 @@
 
 .perfil-form button:hover {
     background-color: #236b45;
+}
+
+[data-theme="dark"] .perfil-form button {
+    background-color: #4caf50;
+}
+
+[data-theme="dark"] .perfil-form button:hover {
+    background-color: #66bb6a;
 }
 
 /* Responsividade */
