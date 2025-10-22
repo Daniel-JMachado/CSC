@@ -10,3 +10,8 @@ env/
 .env
 *.log
 .DS_Store
+
+# Dados de sessão e uploads locais
+app/data/session.json
+uploads/fotos_perfil/*
+!uploads/fotos_perfil/.gitkeep

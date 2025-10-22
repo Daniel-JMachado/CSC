@@ -1,6 +1,6 @@
 id,nome,email,senha,tipo,bairro,telefone,areas_atuacao,data_cadastro,ultimo_login,status,endereco,foto_perfil
 1,Maria das Graças,morador@teste.com,03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4,morador,Centro,(35) 98765-4321,,2025-01-01 00:00:00,2025-10-21 20:49:57,ativo,Rua das Flores 123,uploads/fotos_perfil/user_1_foto_perfil.png
-2,Benedito Luiz,catador@teste.com,03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4,catador,Pinheirinho,(35) 91234-5679,"Centro,Pinheirinho,Varginha",2025-01-01 00:00:00,2025-10-21 20:36:08,ativo,Rua José Augusto dos Santos 50,uploads/fotos_perfil/user_2_foto_perfil.png
+2,Benedito Luiz,catador@teste.com,03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4,catador,Pinheirinho,(35) 91234-5679,"Centro,Pinheirinho,Varginha",2025-01-01 00:00:00,2025-10-21 21:56:46,ativo,Rua José Augusto dos Santos 50,uploads/fotos_perfil/user_2_foto_perfil.png
 3,Administrador,admin@prefeitura.itajuba.gov.br,03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4,admin,Centro,(35) 3629-1234,"Centro, Varginha, Morro Chic",2025-01-01 00:00:00,2025-10-21 20:21:32,ativo,Rua Centro 123,
 4,Maria Silva,maria@teste.com,03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4,morador,Varginha,(35) 98888-7777,,2025-01-15 10:30:00,2025-07-01 10:23:15,ativo,Av. Principal 456,
 5,João Oliveira,joao@teste.com,03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4,morador,Morro Chic,(35) 97777-6666,,2025-01-20 14:15:00,2025-07-01 08:45:30,ativo,Rua Secundária 789,
