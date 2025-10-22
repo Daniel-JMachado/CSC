@@ -280,14 +280,32 @@
     transition: transform 0.2s;
 }
 
+[data-theme="dark"] .morador-catador-card {
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #42a5f5;
+}
+
 .morador-catador-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
+[data-theme="dark"] .morador-catador-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
 .morador-catador-card h4 {
     color: #3498db;
     margin-bottom: 0.8rem;
+}
+
+[data-theme="dark"] .morador-catador-card h4 {
+    color: #42a5f5;
+}
+
+[data-theme="dark"] .morador-catador-card p {
+    color: #b0b0b0;
 }
 
 /* Cards de catadores (página detalhada) */
@@ -300,6 +318,12 @@
     border-top: 5px solid #3498db;
 }
 
+[data-theme="dark"] .morador-catador-detail-card {
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-top: 5px solid #42a5f5;
+}
+
 .morador-catador-detail-card h3 {
     color: #3498db;
     margin-bottom: 1rem;
@@ -307,8 +331,17 @@
     border-bottom: 1px solid #eee;
 }
 
+[data-theme="dark"] .morador-catador-detail-card h3 {
+    color: #42a5f5;
+    border-bottom: 1px solid #444;
+}
+
 .morador-catador-info {
     margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .morador-catador-info {
+    color: #b0b0b0;
 }
 
 .morador-catador-bio {
@@ -317,6 +350,11 @@
     background-color: #f9f9f9;
     padding: 0.8rem;
     border-radius: 5px;
+}
+
+[data-theme="dark"] .morador-catador-bio {
+    color: #b0b0b0;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* Cards de coletas */
@@ -328,6 +366,11 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
+[data-theme="dark"] .morador-coleta-card {
+    background-color: #2d2d2d;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
 .morador-coleta-header {
     display: flex;
     justify-content: space-between;
@@ -337,9 +380,22 @@
     border-bottom: 1px solid #eee;
 }
 
+[data-theme="dark"] .morador-coleta-header {
+    border-bottom: 1px solid #444;
+}
+
 .morador-coleta-header h3 {
     margin: 0;
     color: #333;
+}
+
+[data-theme="dark"] .morador-coleta-header h3 {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .morador-coleta-card p,
+[data-theme="dark"] .morador-coleta-card strong {
+    color: #b0b0b0;
 }
 
 .morador-coleta-status {
@@ -353,13 +409,26 @@
     border-left: 5px solid #f39c12;
 }
 
+[data-theme="dark"] .morador-coleta-pending {
+    border-left: 5px solid #ffa726;
+}
+
 .morador-coleta-pending .morador-coleta-status {
     background-color: #fff3cd;
     color: #856404;
 }
 
+[data-theme="dark"] .morador-coleta-pending .morador-coleta-status {
+    background-color: rgba(255, 167, 38, 0.2);
+    color: #ffa726;
+}
+
 .morador-coleta-scheduled {
     border-left: 5px solid #3498db;
+}
+
+[data-theme="dark"] .morador-coleta-scheduled {
+    border-left: 5px solid #42a5f5;
 }
 
 .morador-coleta-scheduled .morador-coleta-status {
@@ -367,13 +436,27 @@
     color: #004085;
 }
 
+[data-theme="dark"] .morador-coleta-scheduled .morador-coleta-status {
+    background-color: rgba(66, 165, 245, 0.2);
+    color: #42a5f5;
+}
+
 .morador-coleta-completed {
     border-left: 5px solid #2ecc71;
+}
+
+[data-theme="dark"] .morador-coleta-completed {
+    border-left: 5px solid #66bb6a;
 }
 
 .morador-coleta-completed .morador-coleta-status {
     background-color: #d4edda;
     color: #155724;
+}
+
+[data-theme="dark"] .morador-coleta-completed .morador-coleta-status {
+    background-color: rgba(102, 187, 106, 0.2);
+    color: #66bb6a;
 }
 
 /* Artigos educativos */
@@ -385,6 +468,11 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
+[data-theme="dark"] .morador-article-card {
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 .morador-article-card h3 {
     color: #2e8b57;
     margin-bottom: 1.2rem;
@@ -392,8 +480,18 @@
     border-bottom: 2px solid #f0f0f0;
 }
 
+[data-theme="dark"] .morador-article-card h3 {
+    color: #66bb6a;
+    border-bottom: 2px solid #444;
+}
+
 .morador-article-content {
     line-height: 1.6;
+}
+
+[data-theme="dark"] .morador-article-content,
+[data-theme="dark"] .morador-article-card p {
+    color: #b0b0b0;
 }
 
 /* Estilos para o perfil do morador */
@@ -410,6 +508,11 @@
     margin-bottom: 30px;
     color: white;
     box-shadow: 0 8px 32px rgba(46, 139, 87, 0.2);
+}
+
+[data-theme="dark"] .profile-header {
+    background: linear-gradient(135deg, #1e5e3c 0%, #165216 100%);
+    box-shadow: 0 8px 32px rgba(46, 139, 87, 0.4);
 }
 
 .profile-header h1 {
@@ -437,6 +540,10 @@
     font-weight: 600;
 }
 
+[data-theme="dark"] .profile-title {
+    color: #66bb6a;
+}
+
 /* Estilos para formulários de edição */
 .stForm {
     background: #f8f9fa;
@@ -444,6 +551,11 @@
     border-radius: 12px;
     border: 1px solid #e9ecef;
     margin-top: 20px;
+}
+
+[data-theme="dark"] .stForm {
+    background: #2d2d2d;
+    border: 1px solid #444;
 }
 
 .stForm .stButton button {
@@ -495,6 +607,38 @@
 
 .profile-container > div {
     animation: fadeInUp 0.6s ease-out;
+}
+
+/* Estilos globais para elementos do Streamlit no modo escuro */
+[data-theme="dark"] .stMarkdown,
+[data-theme="dark"] .stMarkdown p,
+[data-theme="dark"] .stMarkdown li,
+[data-theme="dark"] .stMarkdown div {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .stMarkdown strong {
+    color: #f0f0f0 !important;
+}
+
+[data-theme="dark"] .element-container,
+[data-theme="dark"] .stMarkdown {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] div[data-testid="stExpander"] {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+}
+
+[data-theme="dark"] div[data-testid="stExpander"] p,
+[data-theme="dark"] div[data-testid="stExpander"] div {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .stDataFrame,
+[data-theme="dark"] table {
+    color: #e0e0e0 !important;
 }
 
 /* Responsividade */

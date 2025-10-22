@@ -160,9 +160,19 @@
     transition: transform 0.2s;
 }
 
+[data-theme="dark"] .catador-solicitacao-card {
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-left: 5px solid #66bb6a;
+}
+
 .catador-solicitacao-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+[data-theme="dark"] .catador-solicitacao-card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 }
 
 .catador-solicitacao-card h4 {
@@ -173,12 +183,25 @@
     padding-bottom: 10px;
 }
 
+[data-theme="dark"] .catador-solicitacao-card h4 {
+    color: #66bb6a;
+    border-bottom: 1px solid #444;
+}
+
 .catador-solicitacao-card p {
     margin-bottom: 8px;
 }
 
+[data-theme="dark"] .catador-solicitacao-card p {
+    color: #b0b0b0;
+}
+
 .catador-solicitacao-card strong {
     color: #333;
+}
+
+[data-theme="dark"] .catador-solicitacao-card strong {
+    color: #e0e0e0;
 }
 
 /* Cards de notificação */
@@ -194,6 +217,12 @@
     transition: transform 0.2s;
 }
 
+[data-theme="dark"] .catador-notificacao-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    border-left: 4px solid #7f8c8d;
+}
+
 .catador-notificacao-card-nova {
     background-color: #ffffff;
     border-radius: 8px;
@@ -204,10 +233,21 @@
     transition: transform 0.2s;
 }
 
+[data-theme="dark"] .catador-notificacao-card-nova {
+    background-color: #2d2d2d;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    border-left: 4px solid #42a5f5;
+}
+
 .catador-notificacao-card:hover,
 .catador-notificacao-card-nova:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+[data-theme="dark"] .catador-notificacao-card:hover,
+[data-theme="dark"] .catador-notificacao-card-nova:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.4);
 }
 
 .catador-notificacao-card h4,
@@ -217,8 +257,17 @@
     font-size: 1.1rem;
 }
 
+[data-theme="dark"] .catador-notificacao-card h4,
+[data-theme="dark"] .catador-notificacao-card-nova h4 {
+    color: #42a5f5;
+}
+
 .catador-notificacao-card.notification-read h4 {
     color: #7f8c8d;
+}
+
+[data-theme="dark"] .catador-notificacao-card.notification-read h4 {
+    color: #999;
 }
 
 .catador-notificacao-card p,
@@ -228,12 +277,22 @@
     line-height: 1.5;
 }
 
+[data-theme="dark"] .catador-notificacao-card p,
+[data-theme="dark"] .catador-notificacao-card-nova p {
+    color: #b0b0b0;
+}
+
 .catador-notificacao-card small,
 .catador-notificacao-card-nova small {
     display: block;
     text-align: right;
     color: #777;
     font-style: italic;
+}
+
+[data-theme="dark"] .catador-notificacao-card small,
+[data-theme="dark"] .catador-notificacao-card-nova small {
+    color: #999;
 }
 
 /* Cards de conteúdo educativo */
@@ -245,6 +304,13 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+[data-theme="dark"] .catador-article-card, 
+[data-theme="dark"] .catador-tip-card, 
+[data-theme="dark"] .catador-material-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
 .catador-article-card h3, .catador-tip-card h4, .catador-material-card h3 {
     color: #2c3e50;
     margin-bottom: 10px;
@@ -252,9 +318,22 @@
     padding-bottom: 10px;
 }
 
+[data-theme="dark"] .catador-article-card h3, 
+[data-theme="dark"] .catador-tip-card h4, 
+[data-theme="dark"] .catador-material-card h3 {
+    color: #66bb6a;
+    border-bottom: 1px solid #444;
+}
+
 .catador-article-content, .catador-tip-card p {
     margin: 15px 0;
     line-height: 1.6;
+}
+
+[data-theme="dark"] .catador-article-content, 
+[data-theme="dark"] .catador-tip-card p,
+[data-theme="dark"] .catador-material-card p {
+    color: #b0b0b0;
 }
 
 .catador-article-footer {
@@ -262,6 +341,10 @@
     color: #666;
     text-align: right;
     margin-top: 10px;
+}
+
+[data-theme="dark"] .catador-article-footer {
+    color: #999;
 }
 
 .catador-material-section {
@@ -645,6 +728,53 @@
 
 .profile-container > div {
     animation: fadeInUp 0.6s ease-out;
+}
+
+/* Estilos globais para elementos do Streamlit no modo escuro */
+[data-theme="dark"] .stMarkdown,
+[data-theme="dark"] .stMarkdown p,
+[data-theme="dark"] .stMarkdown li,
+[data-theme="dark"] .stMarkdown div {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .stMarkdown strong {
+    color: #f0f0f0 !important;
+}
+
+[data-theme="dark"] .element-container,
+[data-theme="dark"] .stMarkdown {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] div[data-testid="stExpander"] {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+}
+
+[data-theme="dark"] div[data-testid="stExpander"] p,
+[data-theme="dark"] div[data-testid="stExpander"] div {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .stDataFrame,
+[data-theme="dark"] table {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .streamlit-expander {
+    border: 1px solid #444;
+    background-color: #2d2d2d;
+}
+
+[data-theme="dark"] .streamlit-expander .streamlit-expanderHeader {
+    background: linear-gradient(135deg, #2d2d2d 0%, #252525 100%);
+    color: #66bb6a;
+}
+
+[data-theme="dark"] .streamlit-expander .streamlit-expanderContent {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
 }
 
 /* Responsividade */
