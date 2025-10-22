@@ -129,7 +129,7 @@ class LoginPage:
         st.markdown("""
         <div class="login-footer">
             <p>© 2025 - Prefeitura Municipal de Itajubá - Secretaria de Meio Ambiente</p>
-            <p><small>Desenvolvido com ❤️ para um futuro mais sustentável</small></p>
+            <p><small>Desenvolvido por Daniel J Machado (by Claude) para um futuro mais sustentável</small></p>
         </div>
         """, unsafe_allow_html=True)
     
